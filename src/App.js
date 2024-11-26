@@ -9,11 +9,11 @@ function App() {
   };
 
   return (
-    <div className="grid grid-cols-2 border border-red-400 p-2">
-      <div className="col-span-1 border border-blue-400 p-2">
+    <div className="grid sm:grid-cols-2  border border-red-400 p-2">
+      <div className="sm:col-span-1 border border-blue-400 p-2">
         <List onCityClick={handleCityClick} />
       </div>
-      <div className="col-span-1 border border-green-400 p-2">
+      <div className="sm:col-span-1 border border-green-400 p-2">
         <Map center={center} />
       </div>
     </div>
